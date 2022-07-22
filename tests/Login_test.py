@@ -35,7 +35,7 @@ class TestLogin:
             HomePage(self.driver).click_welcome()
             self.driver.implicitly_wait(2)
             HomePage(self.driver).click_logout()
-            assert self.driver.title == "OrangeHRMrw"
+            assert self.driver.title == "OrangeHRM"
         except AssertionError:
             print("There was an exception")
             print(AssertionError)
